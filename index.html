@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/605b52c0c0.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<div id="header">
+    <div class="container">
+        <nav>
+            <img src="images/logo2.png" class="logo">
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <i class="fa-solid fa-xmark" onclick="closemenu()"> </i>
+            </ul>
+            <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+            <p>Front-End Developer</p>
+            <h1>Hi, I'm <span>Vedika</span><br>Soni From India.</span></h1>
+        </div>
+    </div>
+</div>
+<!-- ---------------about------------------------------- -->
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="images/about-img.png">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p>As a fresher seeking a position in Front-End web development. I am highly motivated and eager to learn and adapt to new technologies. With a passion for coding and a strong foundation in HTML, CSS and JavaScript. I am confident in my ability to contribute to any web development project.</p>
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                    <p class="tab-links" onclick="opentab('education')">Education</p>
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>HTML</span><br>Designing Structure for the website</li>
+                        <li><span>CSS</span><br>Styling Website</li>
+                        <li><span>JavaScript</span><br>Adding logics to the website</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="experience">
+                    <ul>
+                        <li><span>Fresher</span><br></li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>MCA</span><br>2023-2025<br>LNCT University,Bhopal</li>
+                        <li><span>B.Sc(Computer Science)</span><br>2019-2022<br>The Bhopal School of Social Sciences,Bhopal</li>
+                        <li><span>12th</span><br>2019<br>New Age Public School,Gadarwara</li>
+                    </ul>
+                </div>
+            </div>
+            </div>
+    </div>
+</div>
+    <!--------------------------services------------  -->
+<div id="services">
+    <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+            <div>
+                <i class="fa-solid fa-code"></i>
+                <h2>Portfolio</h2>
+                <p>
+                    Designed a personal portfolio by the use of HTML and CSS, and added logics by the use of JavaScript.
+                </p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-brands fa-app-store"></i>
+                <h2>E-commerce Clone</h2>
+                <p>
+                    Designed a Amazon Clone Website by the use of HTML,CSS and JavaScript.
+                </p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-crop-simple"></i>
+                <h2>Tic-Tac-Toe</h2>
+                <p>
+                    Designed a game by the use of HTML,CSS and JavaScript.
+                </p>
+                <a href="#">Learn more</a>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- ------contact------ -->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-regular fa-envelope"></i>vedika8822@gmail.com</p>
+                <p><i class="fa-solid fa-square-phone"></i>6261373725</p>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/share/15HfgkZpWT/"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://www.instagram.com/vedika.11__/profilecard/?igsh=MXZ4dW9uZjB2amhleQ=="><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://www.linkedin.com/in/vedika-soni-1415872a9?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://wa.me/qr/T7F64UTALTJ6D1"><i class="fa-brands fa-whatsapp"></i></a>
+                </div>
+                <a href="images/Resume.png" download class="btn btn2">Download CV</a>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="script.js"></script> 
+</body>
+</html>
